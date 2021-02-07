@@ -1,0 +1,70 @@
+## HOMEWORK 5
+
+class Animal:
+    def __init__(self, feed, colour, place):
+        self.feed = feed
+        self.colour = colour
+        self.place = place
+        
+    def print_feed(self):
+        print(self.feed)
+        
+    def print_colour(self):
+        print(self.colour)
+        
+    def print_place(self):
+        print(self.place)
+        
+class Creature(Animal):
+    pass
+
+creature = Creature("meat", "yellow", "Africa")
+creature.print_feed()
+creature.print_colour()
+creature.print_place()
+
+class Dogs:
+    def __init__(self, breed, colour, feed):
+        self.breed = breed
+        self.colour = colour
+        self.feed = feed
+    
+    def print_breed(self):
+        print(self.breed)
+        
+    def print_colour(self):
+        print(self.colour)
+        
+    def print_feed(self):
+        print(self.feed)
+        
+class Animals(Dogs):
+    pass
+
+animals = Animals("Golden Retriever", "gold", "meat")
+animals.print_breed()  
+animals.print_colour() 
+animals.print_feed()   
+
+class Cats:
+    def __init__(self, breed, colour, eyecolour):
+        self.breed = breed
+        self.colour = colour
+        self.eyecolour = eyecolour
+    
+    def print_breed(self):
+        print(self.breed)
+        
+    def print_colour(self):
+        print(self.colour)
+        
+    def print_eyecolour(self):
+        print(self.eyecolour)
+        
+class Pets(Cats):
+    pass
+
+pets = Pets("Scottish", "grey", "orange")
+pets.print_breed()  
+pets.print_colour() 
+pets.print_eyecolour()  
